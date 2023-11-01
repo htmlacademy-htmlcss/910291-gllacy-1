@@ -1,0 +1,23 @@
+body {
+  color: #565C66;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
+  margin: 0;
+
+}
+.slider_two{
+  background-color: #69A9FF;
+}
+/*
+.slider_one {
+  background-color: #FEAFC3;
+}
+
+
+.slider_three {
+  background-color: #FCC850;
+}
+*/
