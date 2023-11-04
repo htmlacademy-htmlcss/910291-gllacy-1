@@ -8,6 +8,10 @@ body {
   margin: 0;
 
 }
+.visually-hidden {
+  visibility: hidden;
+
+}
 .slider_two{
   background-color: #69A9FF;
 }
