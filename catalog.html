@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="slider_one slider_two slider_three">
+
+    <header class="main-header">
+      <nav class="main-header-nav">
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" width="137" height="56" alt="Логотип сайта магазина Глейси">
+        </a>
+        <ul class="cite-navigation">
+          <li class="cite-navigation-item">
+            <a>Каталог</a>
+          </li>
+          <li class="cite-navigation-item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="cite-navigation-item">
+            <a href="#">О компании</a>
+            </li>
+        </ul>
+      </nav>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
+      <form>
+        <input type="search">
+      </form>
+      <a href="#">Вход</a>
+      <a href="#">Корзина</a>
+    </header>
+
+    <main class="ice-cream-shop-catalog">
+
+      <section class="catalog-creamy-ice-cream">
+        <h1 class="visually-hidden">Каталог сливочного мороженого</h1>
+
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="breadcrumb-item">Сливочное мороженое</li>
+        </ul>
+        <p class="catalog-creamy-ice-cream-title">Сливочное мороженое</p>
+
+        <form class="fillers">
+          <label for="sorting">Сортировка</label>
+          <select id="sorting">
+            <option>по популярности</option>
+          </select>
+          <label for="price">Цена 100 р - 500 р</label>
+          <input type="range" min="100" max="500">
+          <label>Жирность:
+            <input type="radio" name="fat content" value="0%">0%
+            <input type="radio" name="fat content" value="до 10%" checked>до 10%
+            <input type="radio" name="fat content" value="до 30%">до 30%
+            <input type="radio" name="fat content" value="выше 30%">выше 30%
+          </label>
+          <label>Наполнители:
+            <input type="checkbox" name="ice cream fillers" value="шоколадные" checked>шоколадные
+            <input type="checkbox" name="ice cream fillers" value="сахарные посыпки" checked>сахарные посыпки
+            <input type="checkbox" name="ice cream fillers" value="фрукты">фрукты
+            <input type="checkbox" name="ice cream fillers" value="сиропы">сиропы
+            <input type="checkbox" name="ice cream fillers" value="джемы">джемы
+          </label>
+          <input type="submit" value="Применить">
+        </form>
+
+        <ul class="products">
+          <li class="products-item">
+            <h3>Малинка</h3>
+            <img src="images/raspberry ice cream.png" width="168" height="168" alt="малиновое мороженое">
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <p>310&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Фисташка</h3>
+            <img src="images/pistachio ice cream.png" width="168" height="168" alt="фисташковое мороженое">
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <p>340&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Черника</h3>
+            <img src="images/blueberries ice cream.png" width="168" height="168" alt="черничное мороженое">
+            <p>Крем-брюле с черничным джемом</p>
+            <p>330&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Бабл-гам</h3>
+            <img src="images/bubble gum ice cream.png" width="168" height="168" alt="мороженое со вкусом бабл-гам">
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p>320&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Ежевика</h3>
+            <img src="images/blackberry ice cream.png" width="168" height="168" alt="ежевичное мороженое">
+            <p>Сливочное мороженое с ежевичным джемом</p>
+            <p>330&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Банан</h3>
+            <img src="images/banana ice cream.png" width="168" height="168" alt="банановое мороженое">
+            <p>Сливочный пломбир с банановым вкусом</p>
+            <p>340&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Шоколадка</h3>
+            <img src="images/chocolate ice cream.png" width="168" height="168" alt="мороженое шоколадное">
+            <p>Классический шоколадный пломбир</p>
+            <p>270&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Клубничка</h3>
+            <img src="images/bubble gum ice cream.png" width="168" height="168" alt="клубничное мороженое">
+            <p>Сливочный пломбир с клубничным вкусом</p>
+            <p>300&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Лимон</h3>
+            <img src="images/lemon ice cream.png" width="168" height="168" alt="лимонное мороженое">
+            <p>Освежающий лимонный сорбет</p>
+            <p>310&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Ментол</h3>
+            <img src="images/menthol ice cream.png" width="168" height="168" alt="ментоловое мороженое">
+            <p>Сливочный  пломбир с ментоловым сиропом</p>
+            <p>320&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Орешек</h3>
+            <img src="images/nuts ice cream.png" width="168" height="168" alt="ореховое мороженое">
+            <p>Фисташковый пломбир с шоколадным сиропом</p>
+            <p>360&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+          <li class="products-item">
+            <h3>Крем-брюле</h3>
+            <img src="images/creme brulee ice cream.png" width="168" height="168" alt="мороженое крем-брюле">
+            <p>Классическое крем-брюле</p>
+            <p>280&#8381;<span class="weight">/кг</span></p>
+            <input type="image" src="images/cart icon.png" alt="Корзина">
+          </li>
+        </ul>
+
+        <button>Показать еще</button>
+        <ul class="pagination-list">
+          <li class="pagination-list-item">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-list-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-list-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-list-item">
+            <a href="#">4</a>
+          </li>
+          <li class="pagination-list-item">
+            <a href="#">5</a>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="main-footer">
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a href="https://t.me/htmlacademy "><img src="images/telegram icon.png" alt="Телеграмм"></a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="https://vk.com/htmlacademy"><img src="images/vk icon.png" alt="Вконтакте"></a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube icon.png" alt="Youtube"></a>
+          </li>
+        </ul>
+        <ul class="about-us-list">
+          <li class="about-us-list-item">
+            <a href="#">Для постащиков</a>
+          </li>
+          <li class="about-us-list-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="about-us-list-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="about-us-list-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        </footer>
+  </body>
+</html>
