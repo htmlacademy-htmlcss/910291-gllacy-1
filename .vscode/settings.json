@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "compile-hero.disable-compile-files-on-did-save-code": false
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "liveServer.settings.port": 5501
 }

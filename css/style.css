@@ -1,3 +1,26 @@
+/* Шрифты */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   color: #565C66;
   font-size: 16px;
@@ -5,23 +28,103 @@ body {
   font-weight: 400;
   line-height: 22px;
   word-wrap: break-word;
-  margin: 0;
+  margin: 0 auto;
+  width: 1170px;
 
 }
 .visually-hidden {
   visibility: hidden;
 
 }
-.slider_two{
-  background-color: #69A9FF;
-}
-/*
-.slider_one {
+
+.slider-one {
   background-color: #FEAFC3;
 }
 
+.slider-two{
+  background-color: #69A9FF;
+}
 
-.slider_three {
+.slider-three {
   background-color: #FCC850;
 }
-*/
+
+/*
+.products-item input {
+  display: flex;
+  background-color: #FF2F64;
+  border-radius: 26px;
+  padding: 11px 11px;
+}
+.slider-one-text span {
+  font-size: 36px;
+  width: 470px;
+
+}
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  padding-top: 24px;
+}
+.main-header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.main-header-nav a {
+  margin-right: 16px;
+
+}
+
+
+.cite-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.cite-navigation-item {
+  padding: 8px 16px;
+}
+.cite-navigation-item a {
+  text-decoration: none;
+  color: #000000;
+
+}
+/*
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 431px;
+  height: 32px;
+  align-items: center;
+}
+.wrapper a {
+  text-decoration: none;
+  color: #000000;
+}
+.wrapper button {
+  background-color: #FCFCFC4D;
+  border-radius: 27px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  display: flex;
+  padding: 8px;
+}
+.login img {
+  margin-right: 6px;
+  padding-top: 2px;
+}
