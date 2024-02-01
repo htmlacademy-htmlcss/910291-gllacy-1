@@ -111,7 +111,7 @@
         </div>
       </header>
 
-      <main class="main-index">
+      <main class="main-index main-container">
         <h1 class="visually-hidden">Магазин мороженого</h1>
         <section class="slider">
           <div class="slider-container container">
@@ -176,18 +176,18 @@
 
               <ul class="social-list">
                 <li class="social-item">
-                  <a href="https://t.me/htmlacademy ">
-                    <img src="images/svg/icon-telegram.svg" alt="Телеграмм">
+                  <a class="social-item-telegram" href="https://t.me/htmlacademy ">
+                    <span class="visually-hidden">Телеграм</span>
                   </a>
                 </li>
                 <li class="social-item">
-                  <a href="https://vk.com/htmlacademy">
-                    <img src="images/svg/icon-vkontakte.svg" alt="Вконтакте">
+                  <a class="social-item-vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Вконтакте</span>
                   </a>
                 </li>
                 <li class="social-item">
-                  <a href="https://www.youtube.com/user/htmlacademyru">
-                    <img src="images/svg/icon-youtube.svg" alt="Youtube">
+                  <a class="social-item-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Youtube</span>
                   </a>
                 </li>
               </ul>
@@ -216,6 +216,7 @@
         <section class="products products-popular">
           <div class="products-container container">
             <h2 class="visually-hidden">Популярные вкусы мороженого</h2>
+            <p class="products-title page-title">Попробуйте самые популярные вкусы нашего мороженого</p>
             <ul class="products-list">
               <li class="products-item">
                 <div class="products-inner">
@@ -228,7 +229,6 @@
                     <span class="products-price">310 &#8381;/кг</span>
                     <a class="products-button" href="#">
                       <span class="visually-hidden">Положить в корзину</span>
-                      <img src="images/svg/products-cart.svg" alt="корзина" width="16" height="16">
                     </a>
                   </div>
                 </div>
@@ -336,12 +336,12 @@
                         <button class="delivery-tooltip-button" type="button" data-tooltip-text=" "></button>
                       </div>
                     </div>
-                    <input class="delivery-form-input field" type="text" name="delivery-data" id="date" placeholder="01.04.2020" required>
+                    <input class="delivery-form-data field" type="text" name="delivery-data" id="date" placeholder="01.04.2020" required>
                   </fieldset>
 
                   <fieldset class="delivery-form-item delivery-form-item-tel">
                     <label class="delivery-form-label" for="telephone">Телефон</label>
-                    <input class="delivery-form-input field" type="tel" name="telephone" id="telephone" placeholder="+7 800 999-00-00" required>
+                    <input class="delivery-form-tel field" type="tel" name="telephone" id="telephone" placeholder="+7 800 999-00-00" required>
                   </fieldset>
 
                   <fieldset class="delivery-form-item delivery-form-item-address">
@@ -351,7 +351,7 @@
                         <button class="delivery-tooltip-button" type="button" data-tooltip-text=" "></button>
                       </div>
                     </div>
-                    <textarea class="delivery-form-input field" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
+                    <textarea class="delivery-form-address field" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
                   </fieldset>
                 </div>
                 <button class="delivery-form-submit button button-other" type="submit">Отправить</button>
@@ -377,19 +377,19 @@
 
       <footer class="main-footer">
         <ul class="main-footer-social social-list">
-          <li class="social-list-item">
-            <a href="https://t.me/htmlacademy ">
-              <img src="images/svg/icon-telegram.svg" alt="Телеграмм">
+          <li class="social-item">
+            <a class="social-item-telegram" href="https://t.me/htmlacademy ">
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social-list-item">
-            <a href="https://vk.com/htmlacademy">
-              <img src="images/svg/icon-vkontakte.svg" alt="Вконтакте">
+          <li class="social-item">
+            <a class="social-item-vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social-list-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/svg/icon-youtube.svg" alt="Youtube">
+          <li class="social-item">
+            <a class="social-item-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
@@ -407,6 +407,12 @@
             <a class="about-us-link about-us-link-standards" href="#">Экологические стандарты</a>
           </li>
         </ul>
+        <div class="about-author">
+          <a href="https://htmlacademy.ru/">
+            <img src="images/svg/logo-htmlacademy.svg" alt="Логотип HTML-академии" width="93" height="27">
+          </a>
+          <p>Сделано в  <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        </div>
       </footer>
     </div>
 
@@ -428,7 +434,5 @@
         <button class="modal-form-submit button button-other" type="submit">Отправить</button>
       </form>
     </div>
-
-    <script src="scripts/script.js"></script>
   </body>
 </html>
