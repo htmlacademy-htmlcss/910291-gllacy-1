@@ -165,7 +165,7 @@
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 
               <fieldset class="filters-fieldset filters-fieldset-sorting">
-                <h3 class="filters-title">Сортировка:</h3>
+                <legend class="filters-title">Сортировка:</legend>
                 <select class="filters-sorting" name="sorting">
                   <option value="popularity" selected>по популярности</option>
                   <option value="price">по цене</option>
@@ -175,12 +175,14 @@
 
               <fieldset class="filters-fieldset filters-fieldset-range range">
                 <div class="range-container-inputs">
-                  <h2 class="filters-title">Цена:</h2>
+                  <legend class="filters-title">Цена:</legend>
                   <label class="filters-label" for="range-min">
+                    <span class="visually-hidden">Минимальная цена</span>
                     <input class="range-input range-input-min" id="range-min" type="number" value="100" name="min-price">
                   </label>
                   <span>–</span>
                   <label class="filters-label" for="range-max">
+                    <span class="visually-hidden">Максимальная цена</span>
                     <input class="range-input range-input-max" id="range-max" type="number" value="500" name="max-price">
                   </label>
                 </div>
@@ -199,7 +201,7 @@
               </fieldset>
 
               <fieldset class="filters-fieldset filters-fieldset-fats">
-                <h3 class="filters-title">Жирность:</h3>
+                <legend class="filters-title">Жирность:</legend>
                 <ul class="filters-list filters-fat-list">
                   <li class="filters-item">
                     <input class="filters-fat-radio" type="radio" name="fats" value="0%" id="fats-1">
@@ -224,7 +226,7 @@
               </fieldset>
 
               <fieldset class="filters-fieldset filters-fieldset-fillers">
-                <h3 class="filters-title">Наполнители:</h3>
+                <legend class="filters-title">Наполнители:</legend>
                 <ul class="filters-list filters-fillers-list">
                   <li class="filters-item">
                     <input class="fillers-filter-check" type="checkbox" name="chocolate" id="chocolate" checked>
