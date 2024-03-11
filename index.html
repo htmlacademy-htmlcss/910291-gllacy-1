@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -58,7 +59,7 @@
               <div class="search dropdown-container">
                 <form class="search-form">
                   <label class="visually-hidden" for="search-field">Поиск.</label>
-                  <input class="search-input field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+                  <input class="search-input field" type="search" name="search" id="search-field" placeholder="Поиск по сайту" required>
                   <button class="visually-hidden" type="submit" tabindex="-1">Поиск.</button>
                 </form>
               </div>
@@ -239,15 +240,15 @@
 
         <section class="banner">
           <div class="banner-container container">
-            <h2 class="banner-title page-title">Заказывайте мороженое <br>и получайте подарки</h2>
+            <h2 class="banner-title page-title">Заказывайте мороженое <br>и получайте подарки!</h2>
             <ul class="gifts">
               <li class="gifts-item gifts-item-raspberry">
-                <h3 class="gifts-title">Малинка даром</h3>
+                <h3 class="gifts-title">Малинка даром!</h3>
                 <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="gifts-button button" href="#">Хочу подарок</a>
               </li>
               <li class="gifts-item gifts-item-marshmallow">
-                <h3 class="gifts-title">Маршмеллоу даром</h3>
+                <h3 class="gifts-title">Маршмеллоу даром!</h3>
                 <p class="gifts-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
                 <a class="gifts-button button" href="#">Хочу подарок</a>
               </li>
@@ -389,7 +390,7 @@
                         <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-date">
                           <span class="visually-hidden">Дополнительная информация.</span>
                         </button>
-                        <p class="delivery-tooltip-text" id="info-label-date">Введите дату доставки</p>
+                        <p class="delivery-tooltip-text" id="info-label-date" role="tooltip">Введите дату доставки</p>
                       </div>
                     </div>
                     <input class="delivery-form-data field" type="text" name="delivery-data" id="date" placeholder="01.04.2020" required>
@@ -407,7 +408,7 @@
                         <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-address">
                           <span class="visually-hidden">Дополнительная информация.</span>
                         </button>
-                        <p class="delivery-tooltip-text" id="info-label-address">Введите название улицы, дома и квартиры</p>
+                        <p class="delivery-tooltip-text" id="info-label-address" role="tooltip">Введите название улицы, дома и квартиры</p>
                       </div>
                     </div>
                     <textarea class="delivery-form-address field" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
@@ -455,16 +456,16 @@
           </ul>
           <ul class="about-list">
             <li class="about-item">
-              <a class="about-link about-link-important" href="#">Для постащиков</a>
+              <a class="about-link about-link-important" href="#">Для&nbsp;постащиков</a>
             </li>
             <li class="about-item">
-              <a class="about-link"  href="#">Наши документы</a>
+              <a class="about-link"  href="#">Наши&nbsp;документы</a>
             </li>
             <li class="about-item">
-              <a class="about-link" href="#">О производстве</a>
+              <a class="about-link" href="#">О&nbsp;производстве</a>
             </li>
             <li class="about-item">
-              <a class="about-link" href="#">Экологические стандарты</a>
+              <a class="about-link" href="#">Экологические&nbsp;стандарты</a>
             </li>
           </ul>
           <div class="footer-copyright copyright">
@@ -488,7 +489,7 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="modal-form-group modal-form-name">
               <label class="visually-hidden" for="modal-name">Ваше имя и фамилия</label>
-              <input class="modal-form-input field" type="name" name="modal-name" id="modal-name" placeholder="Имя и фамилия" required>
+              <input class="modal-form-input field" type="text" name="modal-name" id="modal-name" placeholder="Имя и фамилия" required>
             </p>
             <p class="modal-form-group modal-form-email">
               <label class="visually-hidden" for="modal-email">Ваш email</label>
