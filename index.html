@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -58,7 +60,7 @@
               <div class="search dropdown-container">
                 <form class="search-form">
                   <label class="visually-hidden" for="search-field">Поиск.</label>
-                  <input class="search-input field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+                  <input class="search-input field" type="search" name="search" id="search-field" placeholder="Поиск по сайту" required>
                   <button class="visually-hidden" type="submit" tabindex="-1">Поиск.</button>
                 </form>
               </div>
@@ -239,16 +241,16 @@
 
         <section class="banner">
           <div class="banner-container container">
-            <h2 class="banner-title page-title">Заказывайте мороженое <br>и получайте подарки</h2>
+            <h2 class="banner-title page-title">Заказывайте мороженое <br>и получайте подарки!</h2>
             <ul class="gifts">
               <li class="gifts-item gifts-item-raspberry">
-                <h3 class="gifts-title">Малинка даром</h3>
+                <h3 class="gifts-title">Малинка даром!</h3>
                 <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="gifts-button button" href="#">Хочу подарок</a>
               </li>
               <li class="gifts-item gifts-item-marshmallow">
-                <h3 class="gifts-title">Маршмеллоу даром</h3>
-                <p class="gifts-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+                <h3 class="gifts-title">Маршмеллоу даром!</h3>
+                <p class="gifts-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
                 <a class="gifts-button button" href="#">Хочу подарок</a>
               </li>
             </ul>
@@ -343,8 +345,8 @@
               <p class="about-us-title page-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
               <ul class="advantages">
                 <li class="advantages-item advantages-item-production">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-                <li class="advantages-item advantages-item-ingredients">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
-                <li class="advantages-item advantages-item-quality">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="advantages-item advantages-item-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="advantages-item advantages-item-quality">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
                 <li class="advantages-item advantages-item-delivery">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
               </ul>
             </div>
@@ -360,7 +362,7 @@
             <div class="subscription">
               <div class="subscription-wrapper">
                 <h3 class="visually-hidden">Подписка на рассылку.</h3>
-                <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="subscription">Ваша почта.</label>
                   <input class="subscription-input field" type="email" name="email" id="subscription" placeholder="email@example.com" required>
@@ -389,7 +391,7 @@
                         <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-date">
                           <span class="visually-hidden">Дополнительная информация.</span>
                         </button>
-                        <p class="delivery-tooltip-text" id="info-label-date">Введите дату доставки</p>
+                        <p class="delivery-tooltip-text" id="info-label-date" role="tooltip">Введите дату доставки</p>
                       </div>
                     </div>
                     <input class="delivery-form-data field" type="text" name="delivery-data" id="date" placeholder="01.04.2020" required>
@@ -407,7 +409,7 @@
                         <button class="delivery-tooltip-toggle" type="button" aria-labelledby="info-label-address">
                           <span class="visually-hidden">Дополнительная информация.</span>
                         </button>
-                        <p class="delivery-tooltip-text" id="info-label-address">Введите название улицы, дома и квартиры</p>
+                        <p class="delivery-tooltip-text" id="info-label-address" role="tooltip">Введите название улицы, дома и квартиры</p>
                       </div>
                     </div>
                     <textarea class="delivery-form-address field" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8"></textarea>
@@ -455,16 +457,16 @@
           </ul>
           <ul class="about-list">
             <li class="about-item">
-              <a class="about-link about-link-important" href="#">Для постащиков</a>
+              <a class="about-link about-link-important" href="#">Для&nbsp;постащиков</a>
             </li>
             <li class="about-item">
-              <a class="about-link"  href="#">Наши документы</a>
+              <a class="about-link"  href="#">Наши&nbsp;документы</a>
             </li>
             <li class="about-item">
-              <a class="about-link" href="#">О производстве</a>
+              <a class="about-link" href="#">О&nbsp;производстве</a>
             </li>
             <li class="about-item">
-              <a class="about-link" href="#">Экологические стандарты</a>
+              <a class="about-link" href="#">Экологические&nbsp;стандарты</a>
             </li>
           </ul>
           <div class="footer-copyright copyright">
@@ -488,7 +490,7 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="modal-form-group modal-form-name">
               <label class="visually-hidden" for="modal-name">Ваше имя и фамилия</label>
-              <input class="modal-form-input field" type="name" name="modal-name" id="modal-name" placeholder="Имя и фамилия" required>
+              <input class="modal-form-input field" type="text" name="modal-name" id="modal-name" placeholder="Имя и фамилия" required>
             </p>
             <p class="modal-form-group modal-form-email">
               <label class="visually-hidden" for="modal-email">Ваш email</label>
